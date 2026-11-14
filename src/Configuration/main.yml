@@ -1,6 +1,6 @@
 ---
 title: Custom
-description: Custom Revision configuration
+description: Dogs Playbook configuration
 privilege: Admin
 actions:
   
@@ -33,4 +33,5 @@ actions:
   
   - !task: {path: 'Tasks\registry.yml'}
   - !task: {path: 'Tasks\revert.yml'}
+  - !task: {path: 'Tasks\gpu-unlock.yml'}
   - !task: {path: 'Tasks\final.yml'}
