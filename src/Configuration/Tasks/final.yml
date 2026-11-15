@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: Applies some Revision configurations
+description: Applies final playbook configuration
 privilege: TrustedInstaller
 actions:
 

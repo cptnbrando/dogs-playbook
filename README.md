@@ -1,78 +1,89 @@
 <h1 align="center">
 
-ReviOS Playbook📜
-
----
-
-<img src="images/github-banner.png" alt="image" width="900">
+Dogs Playbook 🐕
 
 </h1>
 
-<div align="center">
+Dogs Playbook is an [AME Wizard](https://amelabs.net) playbook for debloating and
+hardening a fresh Windows 10/11 install, built to work **fully offline**. It is
+the debloat layer of [Phoenix](https://github.com/cptnbrando/phoenix): Phoenix's
+answer file gets a wiped machine to the desktop, and this playbook strips what
+the answer file can't.
 
-[![Releases](https://img.shields.io/github/v/release/meetrevision/playbook.svg?label=Release)](https://github.com/meetrevision/playbook/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/meetrevision/playbook/total?label=Total%20downloads)](https://github.com/meetrevision/playbook/releases)
-[![Discord](https://img.shields.io/discord/619835916139364383?label=Revision%20Discord&color=D50000&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzMzLjMzMyIgaGVpZ2h0PSIxMzMzLjMzMyIgeG1sbnM6dj0iaHR0cHM6Ly92ZWN0YS5pby9uYW5vIj48ZGVmcz48Y2xpcFBhdGggaWQ9IkEiPjxwYXRoIGQ9Ik0wIDEwMDBoMTAwMFYwSDB6Ii8+PC9jbGlwUGF0aD48L2RlZnM+PGcgY2xpcC1wYXRoPSJ1cmwoI0EpIiB0cmFuc2Zvcm09Im1hdHJpeCgxLjMzMzMzMyAwIDAgLTEuMzMzMzMzIDAgMTMzMy4zMzMzKSI+PGcgZmlsbD0iIzliMDAwMCI+PHBhdGggZD0iTTYxNC43MjQgNjIyLjQ2Yy0uOTA5LTQ1LjQtMjYuMDItODQuODYtNjIuOTQ5LTEwNnYtLjAxYy0xOC4yOC0xMC40Ny0zOS40NS0xNi40NS02Mi4wMjEtMTYuNDVoLTcyLjgzbC0xNTcuMTEgMjcyLjEyYzEzLjEtMTMuNjMgMzEuNTItMjIuMTIgNTEuOTItMjIuMTJoMTc2LjU0YzcwLjI3IDAgMTI3Ljg2LTU3LjI5IDEyNi40NS0xMjcuNTQiLz48cGF0aCBkPSJNNzM2LjIwNCAxMjVoLTg4LjkyYy04LjU3IDAtMTYuNDkgNC41Ny0yMC43OCAxMmwtMTM3LjQxIDIzOC4wMUw0MTYuOTI0IDUwMGg3Mi44M2MyMi41NyAwIDQzLjc0IDUuOTggNjIuMDIgMTYuNDVsNjIuMDUtMTA3LjQ3TDc1Ni45OTQgMTYxYzkuMjQtMTYtMi4zMTEtMzYtMjAuNzktMzYiLz48L2c+PHBhdGggZD0iTTQxNi45MzQgNzUwaC0xMDUuMmMtMjAuNCAwLTM4LjgyIDguNDktNTEuOTIgMjIuMTJsLS4wMS4wMS04LjA0IDEzLjk0Yy0xMy43NCAyMy44MS01LjU4IDU0LjI1IDE4LjIyIDY4bDIyLjA0IDEyLjcyYzIzLjgxIDEzLjc1IDU0LjI1IDUuNTkgNjgtMTguMjJ6IiBmaWxsPSIjYjcxYzFjIi8+PHBhdGggZD0iTTczOS43NDQgNjI2LjAxYy4zNy05Mi4zMy01MC43My0xNzMuNDMtMTI1LjkyLTIxNy4wMjktMzYuODYtMjEuMzgxLTc5LjUyLTMzLjczMS0xMjQuNzMtMzMuOTcxbC0xLjM3LS4wMWgtOTguOThjLTEzLjI1IDAtMjMuOTktMTAuNzQtMjMuOTktMjMuOTlWMTQ5LjA4YzAtMTMuMjk5LTEwLjc5LTI0LjA4LTI0LjA4LTI0LjA4aC03Ni44NGMtMTMuMyAwLTI0LjA4IDEwLjc5LTI0LjA4IDI0LjA5VjQyOGMwIDM5Ljc3IDMyLjIzIDcyIDcyIDcyaDE3OGMyMi41NyAwIDQzLjc0IDUuOTggNjIuMDIgMTYuNDV2LjAxYzM2LjkzIDIxLjE0IDYyLjA0IDYwLjYgNjIuOTQ5IDEwNkM2MTYuMTM0IDY5Mi43MSA1NTguNTQ0IDc1MCA0ODguMjc0IDc1MGgtMTc2LjU0Yy0yMC40IDAtMzguODIgOC40OS01MS45MiAyMi4xMmwtLjAxLjAxYy0xMi40MiAxMi45NC0yMC4wNSAzMC41LTIwLjA1IDQ5Ljg1djI4Ljk0YzAgMTMuMyAxMC43OCAyNC4wOCAyNC4wOCAyNC4wOGgyMjUuOTJjMTM3LjczIDAgMjQ5LjQ1LTExMS4zOCAyNDkuOTktMjQ4Ljk5IiBmaWxsPSIjZDUwMDAwIi8+PC9nPjwvc3ZnPg==)](https://discord.gg/962y4pU)
-[![Donate](https://img.shields.io/badge/Support_us-Donate-darkgreen?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI%2FPg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjxzdmcgZmlsbD0iIzAwMDAwMCIgaGVpZ2h0PSI4MDBweCIgd2lkdGg9IjgwMHB4IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIA0KCSB2aWV3Qm94PSIwIDAgNDkwLjIgNDkwLjIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc%2BDQoJPGc%2BDQoJCTxwYXRoIGQ9Ik0zNjguNCwyNDUuMWMwLDEyLjktMTAuNSwyMy40LTIzLjQsMjMuNHMtMjMuNC0xMC41LTIzLjQtMjMuNHMxMC41LTIzLjQsMjMuNC0yMy40UzM2OC40LDIzMi4yLDM2OC40LDI0NS4xeiBNNzYuMSwyNDUuMQ0KCQkJYzAsMTIuOSwxMC41LDIzLjQsMjMuNCwyMy40czIzLjQtMTAuNSwyMy40LTIzLjRzLTEwLjUtMjMuNC0yMy40LTIzLjRTNzYuMSwyMzIuMiw3Ni4xLDI0NS4xeiBNMzguNSwzODIuN2gyNjh2LTMyLjlINzguMQ0KCQkJYzAuNC0yLjMsMC43LTQuNywwLjctNy4yYzAtMjEuNS0xNy41LTM5LTM5LTM5Yy0yLjMsMC00LjYsMC4yLTYuOCwwLjZWMTg1LjljMi4yLDAuNCw0LjUsMC42LDYuOCwwLjZjMjEuNSwwLDM5LTE3LjUsMzktMzkNCgkJCWMwLTIuNS0wLjItNC44LTAuNy03LjJoMjg2LjFjLTAuOCwzLTEuMiw2LjItMS4yLDkuNWMwLDIxLjUsMTcuNSwzOSwzOSwzOWMzLjMsMCw2LjYtMC40LDkuNi0xLjJ2NzkuOWgzMi45VjE0Ng0KCQkJYzAtMjEuMi0xNy4zLTM4LjUtMzguNS0zOC41SDM4LjVDMTcuMywxMDcuNSwwLDEyNC44LDAsMTQ2djE5OC4yQzAsMzY1LjQsMTcuMywzODIuNywzOC41LDM4Mi43eiBNMzIxLjYsMzU1LjENCgkJCWMtMi43LDAtNC45LDIuMi00LjksNC45djE3LjhjMCwyLjcsMi4yLDQuOSw0LjksNC45aDExOGMyLjcsMCw0LjktMi4yLDQuOS00LjlWMzYwYzAtMi43LTIuMi00LjktNC45LTQuOUgzMjEuNnogTTQ2Ny40LDMzOS4xDQoJCQl2LTE3LjhjMC0yLjctMi4yLTQuOS00LjktNC45aC0xMThjLTIuNywwLTQuOSwyLjItNC45LDQuOXYxNy44YzAsMi43LDIuMiw0LjksNC45LDQuOWgxMThDNDY1LjIsMzQ0LDQ2Ny40LDM0MS44LDQ2Ny40LDMzOS4xeg0KCQkJIE00ODUuMywyNzcuN2gtMTE4Yy0yLjcsMC00LjksMi4yLTQuOSw0Ljl2MTcuOGMwLDIuNywyLjIsNC45LDQuOSw0LjloMTE4YzIuNywwLDQuOS0yLjIsNC45LTQuOXYtMTcuOA0KCQkJQzQ5MC4yLDI3OS45LDQ4OCwyNzcuNyw0ODUuMywyNzcuN3ogTTIyMi4zLDE2MC43YzQ2LjYsMCw4NC40LDM3LjgsODQuNCw4NC40cy0zNy44LDg0LjQtODQuNCw4NC40cy04NC40LTM3LjgtODQuNC04NC40DQoJCQlTMTc1LjYsMTYwLjcsMjIyLjMsMTYwLjd6IE0yMjkuNywxODIuNGgtOS42Yy0xLjUsMC0yLjYsMS4yLTIuNiwyLjZ2MTEuNWMtNy4zLDEuMS0xMy4zLDMuNy0xNy44LDguMWMtNSw0LjgtNy41LDEwLjktNy41LDE4LjQNCgkJCWMwLDguMiwyLjQsMTQuNSw3LjEsMTguN2M0LjcsNC4yLDEyLjMsOC40LDIyLjYsMTIuNmM0LjMsMS44LDcuMiwzLjcsOC45LDUuNmMxLjcsMS45LDIuNSw0LjYsMi41LDguMWMwLDMtMC44LDUuNC0yLjQsNy4zDQoJCQljLTEuNiwxLjgtNCwyLjgtNy4yLDIuOGMtMy44LDAtNi45LTEuMi05LjItMy42Yy0xLjktMi0zLjEtNS0zLjQtOWMtMC4xLTEuNi0xLjUtMi44LTMuMS0yLjdsLTE1LjgsMC4zYy0xLjcsMC0zLjEsMS41LTMuMSwzLjINCgkJCWMwLjQsOC40LDMuMSwxNC44LDguMSwxOS40YzUuNCw0LjksMTIuMiw3LjksMjAuMyw4Ljh2MTAuOGMwLDEuNSwxLjIsMi42LDIuNiwyLjZoOS42YzEuNSwwLDIuNi0xLjIsMi42LTIuNnYtMTEuMg0KCQkJYzYuNS0xLjIsMTEuOC0zLjgsMTUuOS03LjdjNC44LTQuNyw3LjItMTAuOCw3LjItMTguNWMwLTgtMi40LTE0LjItNy4yLTE4LjZjLTQuOC00LjMtMTIuMy04LjctMjIuNS0xM2MtNC40LTEuOS03LjQtMy44LTktNS43DQoJCQlzLTIuNC00LjQtMi40LTcuNHMwLjctNS40LDIuMi03LjRjMS41LTEuOSwzLjgtMi45LDYuOS0yLjljMy4xLDAsNS41LDEuMiw3LjQsMy41YzEuNSwxLjksMi40LDQuNSwyLjcsOGMwLjEsMS42LDEuNiwyLjcsMy4xLDIuNw0KCQkJbDE1LjgtMC4yYzEuNywwLDMuMi0xLjUsMy4xLTMuMmMtMC40LTYuOS0yLjYtMTIuNy02LjctMTcuNGMtNC4yLTQuOS05LjctOC0xNi42LTkuNFYxODVDMjMyLjMsMTgzLjUsMjMxLjEsMTgyLjQsMjI5LjcsMTgyLjR6Ig0KCQkJLz4NCgk8L2c%2BDQo8L2c%2BDQo8L3N2Zz4%3D
-)](https://revi.cc/donate)
+It is a fork of the [ReviOS Playbook](https://github.com/meetrevision/playbook)
+by Revision, with an offline build mode added.
 
-</div>
+## ✨ Features
 
-ReviOS is a customized version of Windows, designed to be lightweight, stable, and focused on improving performance, privacy and compatibility. It aspires to re-create what Windows as an operating system should have been - easy and simple. Now compatible with [AME Wizard](https://amelabs.net)🧙.
-
-## ✨ Key Features
-
-- 🎯 Easy to use, just drag and drop the playbook into [AME Wizard](https://amelabs.net)
+- 🎯 Drag and drop the `.apbx` into [AME Wizard](https://amelabs.net)
+- ✈️ Offline build: every installer is bundled, nothing is downloaded during the run
 - 🗑 Removes bloatware and unnecessary system components
-- ⚡ Optimizes your system for performance and improved privacy
-- 🔧 Integrates the [Revision Tool](https://github.com/meetrevision/revision-tool) to customize your system further
+- ⚡ Optimizes for performance and privacy
+- 🔧 Installs the [Revision Tool](https://github.com/meetrevision/revision-tool) for further tweaks
+- 🧪 Optional, off by default: **GPU tensor unlock check** (see below)
 
-For more detailed information, see our documentation [here](https://revi.cc/docs/features).
+## 💻 System requirements
 
-## 💻 System Requirements
+Same as upstream ReviOS: AMD64 and ARM64 builds of Windows 10 `19044`/`19045`
+and Windows 11 `22631`/`26100`/`26200`. The offline build does not enforce the
+build list.
 
-ReviOS Playbook currently supports ARM64 and AMD64 builds of the following Windows versions:
+## 🚀 Build and run
 
-- Windows 10 21H2 `19044` (+ LTSC)
-- Windows 10 22H2 `19045`
-- Windows 11 23H2 `22631`
-- Windows 11 24H2 `26100` (+ LTSC)
-- Windows 11 25H2 `26200`
+Requires [7-Zip](https://www.7-zip.org/) on `PATH`.
 
-Any other build **is not** supported by Revision.
+```powershell
+./build.ps1          # answer "y" for the offline build
+```
 
-⚠️ ISO Injection is only supported on Windows 11 ISOs.
-
-## 🚀 Getting Started
-
-Ready to elevate your Windows experience? Follow these simple steps:
+`y` runs `src/Executables/Offline/getapps.ps1` once to download the bundled
+installers, then produces `dogs-playbook.apbx`. Drag it into AME Wizard.
 
 > [!CAUTION]
-> It's recommended to start with a fresh, stock Windows installation before applying the playbook to avoid potential conflicts with existing software and user data.
+> Start from a fresh, stock Windows install. AME Wizard will flag this playbook
+> as unverified because it is a modified fork; that is expected.
 
-1. Download [AME Wizard](https://amelabs.net) and our playbook from the latest [releases](https://github.com/meetrevision/playbook/releases).
-2. Launch the AME Wizard and drag-and-drop the playbook into the interface.
-3. Follow the on-screen instructions to complete the installation.
+## 🧪 GPU tensor unlock check (optional)
 
-## 📚 Documentation
+[gpu-unlock](https://github.com/Zagitta/gpu-unlock) removes the half-rate cap
+NVIDIA puts on FP16/BF16/TF32 tensor math on GeForce RTX 20/30/40 cards. It is
+a **Linux** kernel module. On Windows the only route is an experimental UEFI
+port, [Windows-GPU-UNLOCK](https://github.com/impacifist/Windows-GPU-UNLOCK),
+which needs Secure Boot off, BitLocker off and a separate EFI partition, and
+has success reports only for specific desktop RTX 30 setups.
 
-Explore our documentation for more information:
+Neither can be applied safely from inside a playbook, so the option
+**"Check GPU tensor unlock support (read-only)"** only reports where you stand.
+It changes nothing and uses no network. It writes:
 
-- [Playbook](https://revi.cc/docs/playbook/install)
-- [ISO Injection](https://revi.cc/docs/playbook/iso)
-- [Troubleshooting](https://revi.cc/docs/faq/troubleshoot/cannot-login)
+- `%SystemDrive%\DogsPlaybook\GPU-UNLOCK\report.txt` and `report.json`
+- `%PUBLIC%\Desktop\GPU-Unlock-Report.txt`
+
+Each NVIDIA GPU gets one verdict: `not-supported`, `linux-only`, or
+`windows-port-candidate` (desktop Ampere only). Laptops get a warning, because
+the unlock resets every time the dGPU powers down.
+
+The device list comes from a pinned upstream snapshot in
+[`third_party/gpu-unlock`](third_party/gpu-unlock/UPSTREAM.md). That snapshot is
+reference only and is not packed into the `.apbx`. To refresh it:
+
+```powershell
+./tools/Update-GpuUnlock.ps1            # pin upstream main, regenerate the table
+./tools/Update-GpuUnlock.ps1 -SkipDownload   # regenerate from the current snapshot
+```
 
 ## 📝 License
 
 [![License](https://img.shields.io/static/v1?label=LICENSE&message=CC%20BY-SA&logo=creativecommons)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-ReviOS Playbook is licensed under [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+Dogs Playbook is licensed under
+[Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/),
+as is the [ReviOS Playbook](https://github.com/meetrevision/playbook) it is
+adapted from (© Revision). Changes: rebranding, offline build mode, and the
+optional GPU unlock check.
 
-## 🤝 Support
-
-If you need any assistance or have any questions, feel free to reach out to our team. We are here to help!
+`third_party/gpu-unlock` is a separate work under GPL-2.0-only, included
+unmodified with its own license files.
 
 > [!NOTE]
-> Revision itself (and its Discord server) is not tech support in any shape or form.
-
-The best way to contact us is through our [Discord server](https://discord.gg/962y4pU).
+> This is a personal fork. Don't take issues with it to Revision.

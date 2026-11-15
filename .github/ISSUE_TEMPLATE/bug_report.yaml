@@ -54,12 +54,12 @@ body:
         Please fill out the following information. You can find your OS build number and version by running `winver` in the Run dialog
       value: |
         - OS Build Number & Edition: `type here`
-        - ReviOS Version: `type here`
+        - Dogs Playbook version: `type here`
         - ISO Injection: `type here`
         - Specs: `type here`
       placeholder: |
         - OS Build Number & Edition: `26200.6584, Home`
-        - ReviOS version: `25.10`
+        - Dogs Playbook version: `25.10`
         - ISO Injection: `Yes`
         - Specs: `PC, Intel Core i5-10400, 16GB RAM, NVIDIA GeForce GTX 1650`
   

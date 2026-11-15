@@ -14,8 +14,8 @@
 # Or look it up on the docs
 
 $sourceDir = "./src/*"
-$tempZip = "revios.7z"
-$finalFile = "revios.apbx"
+$tempZip = "dogs-playbook.7z"
+$finalFile = "dogs-playbook.apbx"
 $password = "malte"
 $testExe = "./src/Executables/Offline/vc_redist.x64.exe"
 

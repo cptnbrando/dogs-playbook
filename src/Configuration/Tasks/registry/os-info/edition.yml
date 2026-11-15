@@ -1,12 +1,12 @@
 ---
-title: revision-static-edition
-description: revision-static-edition
+title: dogs-static-edition
+description: dogs-static-edition
 privilege: TrustedInstaller
 actions:
 
-  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value: 'EditionSubManufacturer', type: REG_SZ, data: 'MeetRevision'}
-  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value: 'EditionSubstring', type: REG_SZ, data: 'Revision'}
-  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value: 'EditionSubVersion', type: REG_SZ, data: 'ReviOS'}
+  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value: 'EditionSubManufacturer', type: REG_SZ, data: 'Dogs'}
+  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value: 'EditionSubstring', type: REG_SZ, data: 'Dogs Playbook'}
+  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value: 'EditionSubVersion', type: REG_SZ, data: 'Dogs Playbook'}
 
 
   # === Causes Network Sharing/Computer Name issues

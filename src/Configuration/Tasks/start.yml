@@ -1,6 +1,6 @@
 ---
 title: Initialization
-description: Copies Revision folders/files, and configures some initial settings
+description: Copies playbook folders/files, and configures some initial settings
 privilege: TrustedInstaller
 actions:
   
@@ -32,7 +32,7 @@ actions:
   - !writeStatus: {status: "Configuring a power plan"}
   # https://github.com/meetrevision/playbook/issues/105
   # - !run: {exe: "powercfg", args: "-restoredefaultschemes"}
-  # Delete existing Revision power plan if it exists
+  # Delete existing playbook power plan if it exists
   - !powerShell:
     command: |
       $scheme = powercfg -getactivescheme
@@ -46,7 +46,7 @@ actions:
       powercfg -delete 3ff9831b-6f80-4830-8178-736cd4229e7b
 
   - !run: {exe: "powercfg", args: "-duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 3ff9831b-6f80-4830-8178-736cd4229e7b"}
-  - !run: {exe: "powercfg", args: "-changename 3ff9831b-6f80-4830-8178-736cd4229e7b \"Revision - Ultra Performance\" \"Windows's Ultimate Performance with additional changes.\""}
+  - !run: {exe: "powercfg", args: "-changename 3ff9831b-6f80-4830-8178-736cd4229e7b \"Dogs - Ultra Performance\" \"Windows's Ultimate Performance with additional changes.\""}
   - !run: {exe: "powercfg", args: "-s 3ff9831b-6f80-4830-8178-736cd4229e7b"}
   - !run: {exe: "powercfg", args: "-setacvalueindex scheme_current sub_processor PERFINCPOL 2"}
   - !run: {exe: "powercfg", args: "-setacvalueindex scheme_current sub_processor PERFDECPOL 1"}

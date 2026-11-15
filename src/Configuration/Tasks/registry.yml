@@ -1,6 +1,6 @@
 ---
 title: Registry
-description: Revision registry configuration
+description: Playbook registry configuration
 privilege: TrustedInstaller
 actions: 
   - !writeStatus: {status: "Tweaking registry"}

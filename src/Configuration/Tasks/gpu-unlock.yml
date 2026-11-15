@@ -1,0 +1,14 @@
+---
+title: GPU tensor unlock check
+description: Optional, read-only report on gpu-unlock support for this machine's NVIDIA GPU(s)
+privilege: TrustedInstaller
+actions:
+  # Off by default. Changes nothing; writes a report to %SystemDrive%\DogsPlaybook\GPU-UNLOCK
+  # and the Public desktop. See src/Executables/GPU-UNLOCK/GPU-UNLOCK.ps1.
+  - !writeStatus: {status: "Checking GPU tensor unlock support", option: "gpu-unlock-check"}
+  - !run:
+    exeDir: true
+    exe: "PowerShell"
+    args: '-NoP -ExecutionPolicy Bypass -File "GPU-UNLOCK\GPU-UNLOCK.ps1"'
+    option: "gpu-unlock-check"
+    weight: 20
